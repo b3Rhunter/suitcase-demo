@@ -394,6 +394,7 @@ function App(props) {
                   if (update &&
                     (update.status === "confirmed" || update.status === 1)) {
                     setIsAuth(true);
+                    setClaim(true);
                     sendNotification("success", {
                       message: "Minted",
                       description: `You can now view any article of your choice.`,
